@@ -34,6 +34,7 @@ print("The unsafe speeds are")
 for speed in speedrecord:
     speed = int(speed)
     if float(speed) > safe_speed:
+        float(speed)
         print(speed)
  
 
