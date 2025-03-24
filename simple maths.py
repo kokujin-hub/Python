@@ -1,17 +1,14 @@
-"""This program will ask the user for their name and favourite numbers
-and then perform some simple maths on the numbers"""
+'''This program will record the unsafe speed'''
 
-# Ask the user for their name and favourite number
-q = input('What is your name? ')
-num1 = int(input('What is your favourite number? '))
-num2 = int(input('What is your second favourite number '))
+#Variables and lists
+safe_speed = 10
+speedrecord = []
 
-#do the math
-addition = num1 + num2
-multiply = num1 * num2
+#infinite loop until a certain word or number is meet
+while True: 
+    try: #if error occurs it prints something
+        speed = int(input("Input descent speed in m/s: "))
+        if speed == 'end':
+            break
+        
 
-#printing result
-print(f'Hello my friend{q}')
-print(f'here is the calculation of your favourite numbers')
-print(f'{num1} + {num2} = {addition}')
-print(f'{num1} * {num2} = {multiply}')
