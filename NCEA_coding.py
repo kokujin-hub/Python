@@ -14,7 +14,7 @@ while True:
         if speed == end_code:
             break #if input is 'end' the code stops
         speed = float(speed)
-        
+
         if int(speed) <= 0: 
             print("Error, invalid input.")  #if 0 or negative number is put it prints out "invalid input".
 
@@ -33,7 +33,8 @@ print(f"There were {not_safe_speed} rockets faster than the safe speed")
 print("The unsafe speeds are")
 for speed in speedrecord:
     speed = int(speed)
-    if speed > safe_speed:
+    if float(speed) > safe_speed:
+        print(speed)
  
 
 
