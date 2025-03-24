@@ -22,13 +22,14 @@ while True:
     except ValueError: 
         print('Error, invalid input.') #if a non number is input it prints this 
 
-speed = float(speed)
+
 for speed in speedrecord:
-    if speed > safe_speed:
+  speed = int(speed)
+  if float(speed) > safe_speed:
         not_safe_speed += 1
 
 print(f"There were {not_safe_speed} rockets faster than the safe speed")
-     
+
  
 
 
