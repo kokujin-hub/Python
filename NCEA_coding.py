@@ -20,27 +20,20 @@ while True:
 
         speed = float(speed) #converting int speed to float speed
         speedrecord.append(speed) # putting the inputs onto the list
+
     except ValueError: 
         print('Error, invalid input.') #if a non number is input it prints this 
 
-
+#this code will count the number that are above the safe speed
 for speed in speedrecord:
-  speed = int(speed)
   if float(speed) > safe_speed:
         not_safe_speed += 1
 
-print(f"There were {not_safe_speed} rockets faster than the safe speed")
+print(f"There were {not_safe_speed} rockets faster than the safe speed.")
 print("The unsafe speeds are")
-for speed in speedrecord:
-    speed = int(speed)
+
+for speed in speedrecord: #this will print all the speeds that are above the safe_speed
     if float(speed) > safe_speed:
         float(speed)
         print(speed)
  
-
-
-
-
-
-
-
